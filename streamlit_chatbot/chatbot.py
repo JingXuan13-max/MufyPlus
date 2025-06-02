@@ -95,7 +95,7 @@ else:
             making sure I get to school safely.<br><br>
             Though I’m not very good at expressing my feelings,<br>
             please know that I truly appreciate all the little things you do for me.<br><br>
-            By the way, this is a little coding project I learned in my AI & Digital Literacy Workshop at Sunway University—<br>
+            By the way, this is a little coding project I learned in my AI & Digital Literacy Workshop at Sunway University.<br>
             I hope it brings you a pleasant surprise!<br><br>
             Wishing you health, happiness, and a wonderful Father’s Day.<br><br>
             With love,<br>
