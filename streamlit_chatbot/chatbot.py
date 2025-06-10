@@ -14,12 +14,18 @@ def typewriter_effect(text, char_delay=0.12):
         typed_text += char
         placeholder.markdown(
             f"""
-            <h3 style='text-align: center;
-                       font-weight: 500;
-                       font-family: "Arial", sans-serif;
-                       color: #333;'>
+            <div style='
+                text-align: center;
+                font-weight: 500;
+                font-family: Arial, sans-serif;
+                color: #333;
+                font-size: 20px;
+                line-height: 1.6;
+                word-wrap: break-word;
+                padding: 0 10px;
+            '>
                 {typed_text}
-            </h3>
+            </div>
             """,
             unsafe_allow_html=True
         )
@@ -97,30 +103,31 @@ st.markdown(
         background-color: #fffaf0;
     }
     .centered-content {
-        max-width: 600px;
+        max-width: 90%;
         margin: auto;
         text-align: left;
-        font-size: 20px;
+        font-size: 18px;
         font-family: "KaiTi", sans-serif;
         font-weight: 550;
-        line-height: 2;
+        line-height: 1.8;
         color: #444;
-        margin-bottom: 40px;  /* Added space below content */
+        padding: 10px;
+        word-wrap: break-word;
     }
     .button-container {
         display: flex;
         justify-content: center;
-        margin-top: 50px;  /* Increased space above button */
+        margin-top: 40px;
         margin-bottom: 20px;
     }
     .button {
-        font-size: 18px;
+        font-size: 16px;
         color: #d4af37;
         font-weight: bold;
-        padding: 10px 20px;
+        padding: 8px 16px;
         background-color: #fff8dc;
         border: 2px solid #d4af37;
-        border-radius: 10px;
+        border-radius: 8px;
         cursor: pointer;
     }
     .button:hover {
@@ -153,12 +160,18 @@ if current_step.get("typewriter", False):
     else:
         st.markdown(
             f"""
-            <h3 style='text-align: center;
-                       font-weight: 470;
-                       font-family: "Arial", sans-serif;
-                       color: #333;'>
+            <div style='
+                text-align: center;
+                font-weight: 470;
+                font-family: Arial, sans-serif;
+                color: #333;
+                font-size: 20px;
+                line-height: 1.6;
+                word-wrap: break-word;
+                padding: 0 10px;
+            '>
                 {current_step['content']}
-            </h3>
+            </div>
             """,
             unsafe_allow_html=True
         )
