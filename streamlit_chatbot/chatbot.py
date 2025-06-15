@@ -80,7 +80,6 @@ if "opened" not in st.session_state:
 if not st.session_state.opened:
     with st.container():
         st.image(generate_closed_envelope(), use_container_width=True)
-        # Blinking button in the center
         clicked = st.button("✨📬 Click to Open Envelope ✨")
         if clicked:
             st.session_state.opened = True
@@ -99,7 +98,8 @@ else:
             I hope it brings you a pleasant surprise!<br><br>
             Wishing you health, happiness, and a wonderful Father’s Day.<br><br>
             With love,<br>
-            <em>Jing Xuan</em>
+            <em>Jing Xuan</em><br><br>
+            Sunday, June 15, 2025
         </div>
         """, unsafe_allow_html=True)
     st.balloons()
