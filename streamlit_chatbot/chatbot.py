@@ -67,9 +67,9 @@ st.markdown(
 
 # Top title remains at the top
 st.markdown("""
-    <h2 style='text-align: center;'>
+    <h4 style='text-align: center;'>
         💌 Happy Father's Day 💌
-    </h2>
+    </h4>
     """, unsafe_allow_html=True)
 
 # Session state to control reveal
